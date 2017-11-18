@@ -28,6 +28,7 @@ body {
 .menu-full {
   display: none;
 }
+
 .menu-gamburger {
   position: absolute;
   top: 42px;
@@ -64,17 +65,6 @@ body {
   width: 48px;
   height: 5px;
   background-color: #b0cb1f;
-  -webkit-transition-property: margin, -webkit-transform;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-delay: 0.2s, 0;
-  -moz-transition-delay: 0.2s, 0;
-  -ms-transition-delay: 0.2s, 0;
-  -o-transition-delay: 0.2s, 0;
-  transition-delay: 0.2s, 0;
 }
 .menu-gamburger span::before {
   margin-top: -11px;
@@ -82,7 +72,9 @@ body {
 .menu-gamburger span::after {
   margin-top: 11px;
 }
-
+.menu-gamburger {
+  display: none;
+}
 .green-rectangle-for-logo {
   width: 82%; /*400*/
   height: 56px;
@@ -363,6 +355,9 @@ footer {
   .header {
     min-height: 92vh;
   }
+  .menu-gamburger {
+    display: block;
+  }
   .green-rectangle-for-logo {
     width: 70%;
     bottom: 168px;
@@ -472,6 +467,11 @@ footer {
 @media screen and (min-width: 970px) {
   .header {
     height: 100vh;
+  }
+  .menu-gamburger {
+    right: auto;
+    left: 15px;
+    z-index: 2;
   }
   .review {
     margin-top: 117px;
@@ -668,6 +668,9 @@ footer {
   }
 }
 @media screen and (min-width: 1540px) {
+  .menu-gamburger {
+    left: 44px;
+  }
   .review-first {
     margin-top: -29%;
   }
