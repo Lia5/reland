@@ -72,9 +72,10 @@ body {
 .menu-gamburger span::after {
   margin-top: 11px;
 }
+/*
 .menu-gamburger {
   display: none;
-}
+}*/
 .green-rectangle-for-logo {
   width: 82%; /*400*/
   height: 56px;
@@ -301,7 +302,131 @@ footer {
 
 
 
+/*portfolio*/
+.portfolio__header {
+  position: relative;
+  background: url(../img/bg-slider-portfolio.jpg) no-repeat center;
+}
+.portfolio__title {
+/*  margin-top: 54px;
+  margin-left: 34px;*/
+  width: 54%;
+  position: absolute;
+  bottom: -66px;
+  left: 15px;
+  background-color: #ffffff;
+  padding: 17px 14px;
 
+}
+.portfolio__title-green {
+  font-size: 30px;
+  color: #1d7e22;
+  font-weight: bold;
+
+}
+.portfolio__title-bigger {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+.portfolio__title {
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.portfolio__green-rectangle-for-logo {
+  position: relative;
+  width: 100%;
+  margin-top: 86px;
+  margin-bottom: 45px;
+}
+.portfolio-date {
+  display: block;
+  padding: 15px 0 16px 40px;
+  padding-left: 1%;
+  font-size: 20px;
+  font-style: italic;
+  color: #114d14;
+}
+.portfolio__white-rectangle-for-logo {
+  bottom: 0;
+}
+.portfolio__project__header {
+  display: flex;
+}
+.portfolio__social-links a {
+  width: 30px;
+  height: 30px;
+}
+.portfolio__project-title {
+  font-size: 65px;
+  line-height: 35px;
+  color: #1d7e22;
+  font-weight: bold;
+}
+.portfolio__project-title-smaller {
+  font-size: 41px;
+}
+.portfolio__project-adress {
+  padding-top: 5px;
+  font-size: 18px;
+  color: #242323;
+  font-weight: normal;
+
+}
+.portfolio__projecl-nav {
+  font-size: 30px;
+  font-weight: normal;
+  color: #000000;
+}
+.portfolio__projecl-nav ul {
+  padding-left: 20px;;
+}
+
+.portfolio__projecl-nav a {
+  color: #000000;
+  text-decoration: none;
+}
+.portfolio__projecl-nav a:hover {
+  color: blue;
+  text-decoration: underline;
+
+}
+.project img {
+  width: 100%;
+}
+.portfolio__project__foto__works {
+  display: flex;
+}
+.portfolio__project__foto__work {
+  width: 45%;
+  margin: 15px;
+}
+.portfolio__project__text__main {
+  padding: 40px 15px 60px 15px;
+  font-size: 20px;
+  color: #1d7e22;
+  margin: 0;
+}
+.portfolio__project__text {
+  padding: 40px 15px 60px 15px;
+  font-size: 16px;
+  color: #1d7e22;
+  margin: 0;
+}
+.portfolio__project__stage {
+  font-size: 45px;
+  color: #1d7e22;
+  background-color: #f3f0f0;
+  margin: 0;
+  padding: 54px 15px 34px 40px; 
+}
+.portfolio__project__stage__text {
+  margin: 0;
+  color: #464646;
+  background-color: #f3f0f0;
+  padding: 0 15px 20px 40px; 
+}
 
 
 
@@ -340,6 +465,13 @@ footer {
     height: 64%;
     font-size: 16px;
   }
+/*portfolio*/
+.portfolio-date {
+  padding-left: 40px;
+  font-size: 22px;
+}
+
+
 
 }
 
