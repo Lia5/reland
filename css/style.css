@@ -308,32 +308,32 @@ footer {
   background: url(../img/bg-slider-portfolio.jpg) no-repeat center;
 }
 .portfolio__title {
-/*  margin-top: 54px;
-  margin-left: 34px;*/
   width: 54%;
   position: absolute;
   bottom: -66px;
   left: 15px;
   background-color: #ffffff;
-  padding: 17px 14px;
+  padding: 17px 20px 17px 14px;
+  z-index: 2;
 
-}
-.portfolio__title-green {
-  font-size: 30px;
-  color: #1d7e22;
-  font-weight: bold;
-
-}
-.portfolio__title-bigger {
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: bold;
 }
 .portfolio__title {
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
 }
+.portfolio__title-green {
+  font-size: 30px;
+  color: #1d7e22;
+  font-weight: bold;
+  text-transform: none;
+}
+.portfolio__title-bigger {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .portfolio__green-rectangle-for-logo {
   position: relative;
   width: 100%;
@@ -392,14 +392,35 @@ footer {
   text-decoration: underline;
 
 }
+.portfolio__projecl-nav-active {
+  position: relative;
+}
+.little-green-rectangle {
+  position: absolute;
+  width: 40px;
+  height: 22px;
+  background-color: #b0cb1f;
+  left: -74px;
+  top: 8px;
+}
+.project {
+  position: relative;
+}
 .project img {
   width: 100%;
 }
+.portfolio__project__date-social .portfolio-date {
+  display: none;
+}
+.portfolio__project__date-social .how-contact__img {
+  display: none;
+}
 .portfolio__project__foto__works {
   display: flex;
+  flex-wrap: wrap;
 }
 .portfolio__project__foto__work {
-  width: 45%;
+  width: 43%;
   margin: 15px;
 }
 .portfolio__project__text__main {
@@ -414,19 +435,113 @@ footer {
   color: #1d7e22;
   margin: 0;
 }
+.portfolio__project__right-menu {
+  display: none;
+}
+.portfolio__project__stages {
+  background-color: #f3f0f0; 
+}
 .portfolio__project__stage {
   font-size: 45px;
   color: #1d7e22;
-  background-color: #f3f0f0;
   margin: 0;
   padding: 54px 15px 34px 40px; 
+  font-weight: normal;
 }
 .portfolio__project__stage__text {
   margin: 0;
   color: #464646;
-  background-color: #f3f0f0;
   padding: 0 15px 20px 40px; 
 }
+.portfolio__project__gallery {
+  padding-left: 15px;
+}
+.portfolio__project__stage__foto-main {
+  margin-top: 15px;
+  width: 450px;
+  height: 319px;
+}
+.portfolio__project__stage__foto {
+
+  width: 131px;
+  height: 89;
+  margin: 1%;
+  margin-bottom: 15px;
+}
+.portfolio__social-links-after {
+  padding: 32px 15px 24px 55%;
+  background-image: none;
+}
+.footer-under-tree {
+  position: absolute;
+  bottom: -177px;
+  left: -157px;
+}
+.portfolio__other-projects {
+  margin-top: 52px;
+  padding: 0 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 651px;
+  align-items: center;
+}
+.portfolio__project__item {
+  width: 130px;
+  margin-bottom: 25px;
+  padding: 0 5px;
+}
+.portfolio__project__item img {
+  width: 100%;
+}
+.portfolio__project__item__title {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+.portfolio__project__item__title__main {
+  padding-top: 35px;
+  text-transform: uppercase;
+  text-align: right;
+}
+.portfolio__project__item__title__main-first {
+  font-size: 36px;
+
+  font-weight: bold;
+  color: #114d14;
+  text-shadow: #ffffff 1px 1px 0, #ffffff -1px -1px 0, 
+  #ffffff -1px 1px 0, #ffffff 1px -1px 0;
+}
+.portfolio__project__item__title__main-bigger {
+  font-size: 30px;
+
+  font-weight: bold;
+  line-height: 30px;
+  text-shadow: #ffffff 1px 1px 0, #ffffff -1px -1px 0, 
+  #ffffff -1px 1px 0, #ffffff 1px -1px 0;
+}
+.portfolio__project__item__title__main-smaller {
+  font-size: 11px;
+
+  line-height: 20px;
+  font-weight: normal;
+}
+.portfolio__footer__contact-group {
+  font-weight: bold;
+}
+.footer-behind-bg-tree {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -470,7 +585,25 @@ footer {
   padding-left: 40px;
   font-size: 22px;
 }
-
+.portfolio__project__item {
+  width: 181px;
+  padding: 0 15px;
+}
+.portfolio__project__item__title__main-first {
+  font-size: 55px;
+}
+.portfolio__project__item__title__main-bigger {
+  font-size: 59px;
+}
+.portfolio__project__item__title__main-smaller {
+  font-size: 17px;
+}
+.portfolio__other-projects {
+  max-height: 784px;
+}
+.portfolio__project__item__title {
+  font-size: 22px;
+}
 
 
 }
@@ -543,6 +676,10 @@ footer {
     text-align: left;
     background: none;
   }
+  .portfolio__social-links-after {
+    width: 97%;
+    text-align: right;
+  }
   .how-contact__conact-group {
     width: 32%;
   }
@@ -582,6 +719,82 @@ footer {
     right: -52px;
     left: auto;
   }
+/*portfolio*/
+.header {
+  min-height: 100vh;
+}
+  .portfolio__title {
+    margin-top: 54px;
+    margin-left: 34px;
+    position: static;
+    bottom: auto;
+    left: auto;
+    padding: 17px 14px 17px 14px;
+  }
+  .portfolio__title-green {
+    font-size: 51px;
+  }
+  .portfolio__title-bigger {
+    font-size: 51px;
+  }
+  .portfolio__title {
+    font-size: 25px;
+  }
+  .portfolio__green-rectangle-for-logo  {
+    position: absolute;
+    right: 0;
+    bottom: auto;
+    top: -170px;
+  }
+  .portfolio__white-rectangle-for-logo {
+    bottom: -28px;
+  }
+  .portfolio__project__header .portfolio__social-links {
+    display: none;
+  }
+  .portfolio__project__header {
+    position: absolute;
+    right: 53px;
+    padding: 26px 16px 26px 31px;
+    background-color: #ffffff;
+  }
+  .portfolio__project__foto__main {
+    width: 60%;
+  }
+  .portfolio__project__foto__works {
+    overflow: hidden;
+  }
+  .portfolio__project__foto__work {
+    width: 29%;
+  }
+  .portfolio__project__text {
+    width: 30%;
+  }
+  .footer-under-tree {
+    left: 150px;
+  }
+  .portfolio__project__gallery {
+    display: flex;
+    padding-left: 30px;
+
+  }
+.slider-for {
+  width: 72%;
+}
+.slider-nav {
+  width: 20%;
+  margin-top: 2%;
+  margin-left: 4%;
+}
+.portfolio__project__item-big {
+  order: -1;
+}
+.portfolio__other-projects {
+  max-height: 560px;
+}
+
+
+
 
 }
 
@@ -639,7 +852,7 @@ footer {
   }
   .menu-full ul {
     padding: 0;
-    list-style: none;
+    list-style-type: none;
     margin-top: 0;
     font-weight: 700;
   }
@@ -677,6 +890,9 @@ footer {
   .how-contact__social-group {
     display: none;
 
+  }
+  .portfolio__social-links-after {
+    display: block
   }
   .how-contact__conact-group {
     padding: 0;
@@ -743,7 +959,7 @@ footer {
   }
   ul {
     padding-left: 10px;
-    list-style: none;
+    list-style-type: none;
   }
   .footer-block a {
     text-decoration: none;
@@ -767,6 +983,163 @@ footer {
     order: -1;
     font-weight: 700;
   }
+  /*portfolio*/
+  .portfolio__title {
+    margin-top: 120px;
+    margin-left: 82px;
+  }
+  .portfolio__white-rectangle-for-logo {
+    bottom: -28px;
+    z-index: 3;
+  }
+  .portfolio__green-rectangle-for-logo {
+    width: 49%;
+    z-index: 3;
+  }
+  .portfolio__project__foto__main {
+    margin-top: -111px;
+    margin-left: 96px;
+    width: 73%;
+    height: 450px;   
+    position: relative;
+     z-index: 2;
+
+  }
+  .portfolio__project__header {
+    right: 88px;
+    
+    padding: 0;
+  }
+  .portfolio__project__date-social {
+    width: 39%;
+    background-color: #b0cb1f; 
+     margin-top: -300px;
+     margin-left: 37px; 
+     padding-top: 388px;
+     padding-left: 61px;
+    padding-right: 15px;
+    position: relative;
+    display: inline-block;
+
+  }
+  .portfolio__project-title {
+    position: relative;
+    z-index: 3;
+    padding: 26px 16px 26px 31px;
+    background-color: #ffffff;
+
+  }
+  .portfolio__project__text__main {
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 10px;
+  }
+  .portfolio__green-rectangle-for-logo  .portfolio-date {
+    display: none;
+  }
+
+ 
+  .portfolio__project__date-social .portfolio-date {
+    display: block;
+    padding-left: 0;
+  }
+  .portfolio__project__date-social .portfolio__social-links {
+    display: block;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 46px;
+    z-index: 2;
+  }
+  .portfolio__project__date-social .how-contact__img {
+    display: block;
+  }
+  .portfolio__project__foto__works {
+    display: inline-block;
+    width: 48%;
+  }
+  .portfolio__project__foto__work {
+    display: inline-block;
+    width: 42%; 
+  }
+  .portfolio__project__text {
+    width: 100%;
+  }
+  .portfolio__project__stages {
+    width: 72%;
+    margin-left: 15px;
+    padding-top: 70px;
+    padding-left: 81px;
+    margin-top: -70px;
+  }
+  .portfolio__project__stage {
+    position: relative;
+    padding-left: 0;
+  }
+  .portfolio__project__stage__text {
+    padding-left: 0;
+    padding-right: 81px;
+  }
+  .portfolio__project__gallery {
+    padding-left: 0;
+  }
+  .portfolio__project__right-menu {
+    display: block;
+    padding-top: 54px;
+    position: absolute;
+    right: -135px;
+    top: 0;
+    font-size: 24px;
+    color: #000000;
+  }
+  .portfolio__project__right-menu ul {
+    list-style-type: disc;
+  }
+  .portfolio__project__right-menu li {
+    color: #000000;
+   }
+  .portfolio__project__right-menu a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .portfolio__project__right-menu a:hover {
+    color: #1d7e22;
+  }
+  .portfolio__project__right-menu-tel {
+    font-size: 16px;
+    font-weight: bold;
+    right: -120px;
+  }
+  .portfolio__social-links-after {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 80px;
+    padding-bottom: 69px;
+  }
+  .footer-under-tree {
+    left: auto;
+    right: 109px;
+  }
+  .footer-behind-bg-tree {
+    display: block;
+    position: absolute;
+    bottom: -109px;
+    left: 0;
+    z-index: -1;
+  }
+  .portfolio__other-projects {
+    margin-top: 18px;
+    max-height: none;
+    display: block;
+  }
+  footer {
+    margin-top: 82px;
+  }
+
+
+
+
+
+
 }
 @media screen and (min-width: 1020px) {
   .green-rectangle-for-footer {
@@ -786,6 +1159,20 @@ footer {
   .how-contact970 {
     right: 58px;
   }
+  .portfolio__project__header {
+    right: 99px;
+  }
+  .portfolio__project__foto__main {
+    width: 62%;
+    margin-left: 147px;
+  }
+  .portfolio__project__right-menu {
+    right: -174px;
+  }
+  .portfolio__project__right-menu-tel {
+    right: -160px;
+  }
+
 
 
 }
@@ -793,13 +1180,28 @@ footer {
   .review-first {
     margin-top: -37%;
   }
+  .portfolio__project__foto__main {
+    margin-left: 22%;
+    width: 52%;
+  }
+
 }
 @media screen and (min-width: 1400px) {
   .review-first {
     margin-top: -32%;
   }
+  .portfolio__project__foto__main {
+    width: 57%;
+    margin-left: 18%;
+  }
+  .portfolio__project__foto__works {
+    padding-top: 111px;
+  }
 }
 @media screen and (min-width: 1540px) {
+  .portfolio__header {
+    background-size: cover;
+  }
   .menu-gamburger {
     left: 44px;
   }
@@ -813,5 +1215,32 @@ footer {
   .white-rectangle-for-logo,
   .how-contact970 {
     right: 131px;
+  }
+  .portfolio__menu-full {
+    right: 131px;
+  }
+  .portfolio__project__foto__main {
+    margin-left: 261px;
+    width: 807px;
+  }
+  .portfolio__project__header {
+    right: 172px;
+  }
+  .portfolio__project__foto__main {
+    margin-left: 17%;
+  }
+  .portfolio__project__date-social {
+    margin-left: 182px;
+  }
+  .portfolio__project__foto__works {
+    width: 42%;
+  }
+  .portfolio__project__stage__foto-main {
+    margin-top: 15px;
+    width: 679px; 
+    height: 498px; 
+  }
+  .portfolio__project__stages {
+    padding-left: 115px;
   }
 }
