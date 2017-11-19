@@ -308,7 +308,7 @@ footer {
   background: url(../img/bg-slider-portfolio.jpg) no-repeat center;
 }
 .portfolio__title {
-  width: 54%;
+  width: 265px;
   position: absolute;
   bottom: -66px;
   left: 15px;
@@ -502,6 +502,7 @@ footer {
 }
 .portfolio__project__item__title__main {
   padding-top: 35px;
+  padding-right: 10px;
   text-transform: uppercase;
   text-align: right;
 }
@@ -533,9 +534,15 @@ footer {
 .footer-behind-bg-tree {
   display: none;
 }
-
-
-
+.text-green-bg {
+  display: none;
+}
+.text__project__stage-smaller {
+  display: none;
+}
+.text__project__item__title__main-smaller {
+  font-weight: 900;
+}
 
 
 
@@ -589,15 +596,7 @@ footer {
   width: 181px;
   padding: 0 15px;
 }
-.portfolio__project__item__title__main-first {
-  font-size: 55px;
-}
-.portfolio__project__item__title__main-bigger {
-  font-size: 59px;
-}
-.portfolio__project__item__title__main-smaller {
-  font-size: 17px;
-}
+
 .portfolio__other-projects {
   max-height: 784px;
 }
@@ -622,6 +621,9 @@ footer {
   }
   .menu-gamburger {
     display: block;
+  }
+  .portfolio__title {
+    width: 404px;
   }
   .green-rectangle-for-logo {
     width: 70%;
@@ -730,6 +732,18 @@ footer {
     bottom: auto;
     left: auto;
     padding: 17px 14px 17px 14px;
+  }
+  .portfolio__project__item__title__main-first {
+    font-size: 55px;
+  }
+  .portfolio__project__item__title__main-bigger {
+    font-size: 59px;
+  }
+  .portfolio__project__item__title__main-smaller {
+    font-size: 17px;
+  }
+  .portfolio__project__item {
+    width: 213px; 
   }
   .portfolio__title-green {
     font-size: 51px;
@@ -1134,7 +1148,42 @@ footer {
   footer {
     margin-top: 82px;
   }
+/*text*/
+.text__portfolio__project__stages__wrapper {
+  display: flex;
+}
+.text-green-bg {
+  position: relative;
+  display: block;
+  width: 28%;
+  margin-right: 47px;
+  background-color: #b0cb1f;
 
+}
+.text__portfolio__project__stages {
+  width: 63%;
+}
+.text_project__right-menu {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 0 0 30px;
+  right: -30px;
+  top: 550px;
+}
+.text__portfolio__project__right-menu-tel {
+  right: 21px;
+  bottom: 135px;
+  top: auto;
+}
+.portfolio__green-rectangle-for-logo .text__portfolio-date {
+  display: block;
+}
+.text__project__stage-smaller {
+  display: block;
+  font-size: 25px;
+  color: #000000;
+  text-transform: uppercase;
+}
 
 
 
@@ -1148,6 +1197,9 @@ footer {
   }
 }
 @media screen and (min-width: 1170px) {
+  .portfolio__title {
+    width: 446px;
+  }
   .review-first {
     margin-top: -42%;
   }
@@ -1172,7 +1224,12 @@ footer {
   .portfolio__project__right-menu-tel {
     right: -160px;
   }
-
+  .text-green-bg {
+    margin-right: 58px;
+  }
+  .text_project__right-menu {
+    right: -30px;
+  }
 
 
 }
@@ -1242,5 +1299,11 @@ footer {
   }
   .portfolio__project__stages {
     padding-left: 115px;
+  }
+  .text__portfolio__project__stages {
+    width: 68%;
+  }
+  .text-green-bg {
+    margin-right: 131px;
   }
 }
