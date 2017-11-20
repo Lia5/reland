@@ -388,7 +388,7 @@ footer {
   text-decoration: none;
 }
 .portfolio__projecl-nav a:hover {
-  color: blue;
+  color: #114d14;
   text-decoration: underline;
 
 }
@@ -1244,7 +1244,7 @@ footer {
   }
   .menu-full a:hover {
     text-decoration: underline;
-    color: blue;
+    color: #114d14;
   }
   .menu-full .title-green {
     margin-bottom: 5px;
