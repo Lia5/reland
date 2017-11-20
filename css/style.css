@@ -681,10 +681,24 @@ footer {
 .portfolio-list-third {
   display: none;
 }
+/*contacts*/
+.contact-map {
+  width: 100%;
+  height: 100vh;
+}
+.contscts__adress-bigger {
+  font-size-adjust: 38px;
+  color: #114d14;
+  font-weight: bold;
+}
+.contscts__adress-smaller {
+  text-transform: uppercase;
 
-
-
-
+}
+.contact__popup__send-mail {
+  z-index: 2;
+  top: 0;
+}
 
 @media screen and (min-width: 480px) {
   .avatar {

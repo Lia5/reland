@@ -1,3 +1,4 @@
+
 // initMap() - функция инициализации карты
 function initMap() {
     // Координаты центра на карте. Широта: 50.392149, Долгота: 30.624511
@@ -12,7 +13,7 @@ function initMap() {
         },
          mapTypeId: google.maps.MapTypeId.ROADMAP
     };
- 
+ try {
     // Создаем карту внутри элемента #map
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
@@ -36,7 +37,8 @@ locations.forEach( function( element ) {
 			title: element.title,
 			icon: element.icon,
 		});
-	});	
+  });	
+} catch (e) {}
 }
 google.maps.event.addDomListener(window, "load", initMap);
 
@@ -58,6 +60,7 @@ function initMapHeader() {
       },
        mapTypeId: google.maps.MapTypeId.ROADMAP
   };
+  try {
   var map = new google.maps.Map(document.getElementById("header-map"), mapOptions);
 
   map.scrollwheel=true;
@@ -105,7 +108,47 @@ var marker = new google.maps.Marker({
     icon: element.icon,
   });
 });	
+  } catch (e) {}
 }
 // Ждем полной загрузки страницы, после этого запускаем initMap()
 google.maps.event.addDomListener(window, "load", initMapHeader);
 
+
+function initMapContact() {
+  var centerLatLng = new google.maps.LatLng(55.772853, 37.647289);
+  var mapOptions = {
+      center: centerLatLng, 
+      zoom: 13,               // Зум по умолчанию. Возможные значения от 0 до 21
+      navigationControlOptions: {
+        style: google.maps.NavigationControlStyle.SMALL
+      },
+       mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  try {
+  var map = new google.maps.Map(document.getElementById("contact-map"), mapOptions);
+
+  map.scrollwheel=true;
+map.setOptions({ mapTypeControl:true});
+
+var locations = [
+{
+  title: 'reland',
+  position: {lat: 55.775500, lng: 37.635157}, 
+  icon: {
+    url: "img/map-tree.png",
+    scaledSize: new google.maps.Size(42, 57)
+  }
+}
+];
+locations.forEach( function( element ) {
+var marker = new google.maps.Marker({
+    position: element.position,
+    map: map,
+    title: element.title,
+    icon: element.icon,
+  });
+});	
+  } catch (e){}
+}
+// Ждем полной загрузки страницы, после этого запускаем initMap()
+google.maps.event.addDomListener(window, "load", initMapContact);
