@@ -554,7 +554,7 @@ footer {
 }
 .portfolio-list__markers {
   position: absolute;
-  right: 22px;
+  right: 5%;
   bottom: 139px;
 }
 .portfolio-list__markers ul {
@@ -1010,6 +1010,9 @@ footer {
 .header {
   min-height: 100vh;
 }
+.portfolio-list__markers {
+  right: 12%;
+}
   .portfolio__title {
     margin-top: 54px;
     margin-left: 34px;
@@ -1228,7 +1231,7 @@ footer {
     padding: 33px;
     position: absolute;
     bottom: 185px;
-    right: 47px;
+    right: 32px;
     text-transform: uppercase;
     background-color: #ffffff;
   }
@@ -1369,6 +1372,10 @@ footer {
   .portfolio__title {
     margin-top: 120px;
     margin-left: 82px;
+  }
+  .portfolio-list__markers {
+    right: 20%;
+    bottom: 409px;
   }
   .portfolio__white-rectangle-for-logo {
     bottom: -28px;
