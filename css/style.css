@@ -403,6 +403,9 @@ footer {
   left: -74px;
   top: 8px;
 }
+.portfolio-list__little-green-rectangle {
+  left: -61px;
+}
 .project {
   position: relative;
 }
@@ -686,12 +689,12 @@ footer {
   width: 100%;
   height: 100vh;
 }
-.contscts__adress-bigger {
+.contacts__adress-bigger {
   font-size-adjust: 38px;
   color: #114d14;
   font-weight: bold;
 }
-.contscts__adress-smaller {
+.contacts__adress-smaller {
   text-transform: uppercase;
 
 }
@@ -699,6 +702,95 @@ footer {
   z-index: 2;
   top: 0;
 }
+/*contacts*/
+.contacts__wrapper {
+  margin-top: 85px; 
+  margin-bottom: 50px;
+}
+.contacts__items {
+  width: 91%;
+}
+.contacts {
+  display: flex;
+  margin-left: -52px;
+
+}
+.contacts-pic {
+  position: relative;
+  padding-top: 92px;
+  width: 188px;
+  height: 300px;
+  overflow: hidden; 
+}
+.contacts-pic img {
+  min-width: 221px;
+  min-height: 300px;
+}
+.contacts__green-rectangle-for-logo {
+  margin-top: -78px;
+}
+.contacts__text-green-bg {
+  position: relative;
+  width: 168px;
+}
+.contacts__social-links {
+  width: 100%;
+  padding: 15px 10px;
+  padding-bottom: 361px;
+  background: none;
+}
+.contacts__adress {
+  padding-left: 30px; 
+}
+
+.contacts__title {
+  color: #1d7e21;
+  padding: 0;
+  margin-top: 41px;
+}
+.contacts__adress-bigger {
+  color:  #1d7e21;
+  font-size: 38px;
+  font-weight: 700;
+}
+.contacts__adress-smaller {
+  display: block;
+  color:  #000000;
+  font-size: 25px;
+  font-weight: normal;
+  width: 184px;
+}
+.contacts__how-contact__conact-group {
+  width: 100%;
+  padding: 0;
+}
+.contacts__bush {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: -4px;
+}
+.contacts__bush img {
+  width: 100%;
+}
+.contacts__arrow__right {
+  width: 37px;
+  height: 40px;
+  position: absolute;
+  right: 21px;
+  top: 200px;
+  z-index: 2;
+}
+.contacts__arrow__right img {
+  width: 100%;
+}
+.contacts__how-contact__adress {
+  font-size: 18px;
+}
+.contacts__info {
+  padding-top: 24px;
+}
+
 
 @media screen and (min-width: 480px) {
   .avatar {
@@ -780,6 +872,21 @@ footer {
   .portfolio-list__date {
     margin-top: -171px;
   }
+  .contacts__how-contact__conact-group {
+    width: 100%;
+    padding: 0;
+  }
+  .contacts__social-links a {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .contacts__items {
+    margin-left: -123px;
+  }
+
 
 
 
@@ -1022,7 +1129,54 @@ footer {
   .portfolio-list__green-rectangle-for-logo {
     right: -88px;
   }
+  /*contacts*/
+  .contacts__wrapper {
+    margin-top: 0;
+  }
+  .contacts__social-links {
+    width: 100%;
+    padding: 15px 10px;
+    padding-bottom: 329px;
+    background: none;
+  }
+  .contacts__items {
+    margin-left: -123px;
+  }
+  .contacts__title {
+    width: 100%;
+  }
+  .contacts {
+    margin-left: -175px;
+  } 
+  .contacts__text-green-bg {
+    width: 348px;
+  }
+  .contacts-pic {
+    width: 298px;
+  }
+  .contacts__green-rectangle-for-logo {
+    right: 0;
+  }
+  .contacts__white-rectangle-for-logo {
+    right: auto;
+    left: 39px;
+  }
+  .contacts__adress-smaller {
+    width: auto;
+  }
+  .contacts__how-contact__conact-group {
+    width: auto;
+  }
+  .contacts__social-links {
+    padding-bottom: 245px;
+    text-align: right;
+    width: 90%;
 
+  }
+  .contacts__bush {
+    width: 81%;
+    padding-left: 59px;
+  }
 
 }
 
@@ -1362,78 +1516,124 @@ footer {
   footer {
     margin-top: 82px;
   }
-/*text*/
-.text__portfolio__project__stages__wrapper {
-  display: flex;
-}
-.text-green-bg {
-  position: relative;
-  display: block;
-  width: 28%;
-  margin-right: 47px;
-  background-color: #b0cb1f;
+  /*text*/
+  .text__portfolio__project__stages__wrapper {
+    display: flex;
+  }
+  .text-green-bg {
+    position: relative;
+    display: block;
+    width: 28%;
+    margin-right: 47px;
+    background-color: #b0cb1f;
 
-}
-.text__portfolio__project__stages {
-  width: 63%;
-}
-.text_project__right-menu {
-  width: 100%;
-  background-color: #ffffff;
-  padding: 0 0 0 30px;
-  right: -30px;
-  top: 550px;
-}
-.text__portfolio__project__right-menu-tel {
-  right: 21px;
-  bottom: 135px;
-  top: auto;
-}
-.portfolio__green-rectangle-for-logo .text__portfolio-date {
-  display: block;
-}
-.text__project__stage-smaller {
-  display: block;
-  font-size: 25px;
-  color: #000000;
-  text-transform: uppercase;
-}
-.portfolio-list__social-links {
-  padding-left: 10px;
-  
-}
+  }
+  .text__portfolio__project__stages {
+    width: 63%;
+  }
+  .text_project__right-menu {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 0 0 30px;
+    right: -30px;
+    top: 550px;
+  }
+  .text__portfolio__project__right-menu-tel {
+    right: 21px;
+    bottom: 135px;
+    top: auto;
+  }
+  .portfolio__green-rectangle-for-logo .text__portfolio-date {
+    display: block;
+  }
+  .text__project__stage-smaller {
+    display: block;
+    font-size: 25px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .portfolio-list__social-links {
+    padding-left: 10px;
+    
+  }
 
-.portfolio-list__date {
-z-index: 2;
-position: relative;
-}
-.portfolio-list__green-rectangle-for-logo {
+  .portfolio-list__date {
+  z-index: 2;
   position: relative;
-  bottom: -17px;
-  top: auto;
-  width: 86%;
-}
-.portfolio-list__white-rectangle-for-logo {
-  right: 31px;
-}
-.portfolio-list__markers {
-  position: absolute;
-  right: 31px;
-  bottom: 407px;
-}
-.portfolio-list__text-green-bg {
-  width: 50%;
-  margin-left: 35px;
-}
-.portfolio-list__items {
-  margin-left: -442px;
-}
-.portfolio-list-third {
-  display: block;
-}
-.portfolio-list__white-rectangle-for-logo {
-  right: 114px;
-}
+  }
+  .portfolio-list__green-rectangle-for-logo {
+    position: relative;
+    bottom: -17px;
+    top: auto;
+    width: 86%;
+  }
+  .portfolio-list__white-rectangle-for-logo {
+    right: 31px;
+  }
+  .portfolio-list__markers {
+    position: absolute;
+    right: 31px;
+    bottom: 407px;
+  }
+  .portfolio-list__text-green-bg {
+    width: 50%;
+    margin-left: 35px;
+  }
+  .portfolio-list__items {
+    margin-left: -442px;
+  }
+  .portfolio-list-third {
+    display: block;
+  }
+  .portfolio-list__white-rectangle-for-logo {
+    right: 114px;
+  }
+  /*contacts*/
+  .contacts__green-rectangle-for-logo {
+    right: 0;
+    bottom: -111px;
+  }
+
+  .contacts__items {
+    margin-left: -241px;
+    margin-top: -116px;
+
+  }
+  .contacts__adress__h2 {
+    position: absolute;
+    left: 88px;
+    bottom: 25px;
+    padding: 5px;
+    background-color: #ffffff;
+    z-index: 3;
+  }
+  .contacts-pic {
+    width: 536px;
+    padding-top: 0;
+  }
+  .contacts__white-rectangle-for-logo {
+    right: auto;
+    left: 260px;
+  }
+  .contacts__arrow__right {
+    display: none;
+  }
+  .contacts__social-links {
+    display: block;
+    padding-top: 236px;
+    padding-bottom: 0;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .contacts__bush {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 54%;
+  }
+  .contacts__menu-full {
+    right: 35px;
+  }
 
 }
 @media screen and (min-width: 1020px) {
@@ -1492,8 +1692,33 @@ position: relative;
   }
   .portfolio-list__white-rectangle-for-logo {
     right: 114px;
+  }
+  /*contacts*/
+  .contacts__white-rectangle-for-logo {
+    left: 110px;
+  }
+  .contacts__items {
+    margin-left: -241px;
+  }
+  .contacts__green-rectangle-for-logo {
+    right: -67px;
+    width: 81%;
+  }
+  .contacts__adress__h2 {
+    left: 293px;
+  }
+  .contacts__bush {
+    width: 41%;
+  }
+  .contacts__text-green-bg {
+    width: 68%;
+  }
+  .contacts__items {
+    margin-left: -290px;
 }
-
+.contacts {
+  margin-left: -252px;
+}
 }
 @media screen and (min-width: 1320px) {
   .review-first {
@@ -1503,6 +1728,7 @@ position: relative;
     margin-left: 22%;
     width: 52%;
   }
+
 
 }
 @media screen and (min-width: 1400px) {
@@ -1571,11 +1797,32 @@ position: relative;
   .portfolio-list__text-green-bg {
     width: 73%;
     margin-left: 173px;
-}
-.portfolio-list__items {
-  margin-left: -873px;
-}
-.portfolio-list__text-green-bg {
-  width: 63%;
-}
+  }
+  .portfolio-list__items {
+    margin-left: -873px;
+  }
+  .portfolio-list__text-green-bg {
+    width: 63%;
+  }
+  /*contacts*/
+  .contacts__items {
+    margin-left: -290px;
+  }
+  .contacts__text-green-bg {
+    margin-left: 171px;
+  }
+  .contacts {
+    margin-left: -332px;
+  }
+  .contacts__green-rectangle-for-logo {
+    right: 30px;
+    width: 90%;
+  }
+  .contacts__green-rectangle-for-logo {
+    right: 30px;
+    width: 90%;
+  }
+
+
+
 }
