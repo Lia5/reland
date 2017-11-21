@@ -12,13 +12,16 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrCJjsEd1-NqzpD_-ode97UjJkJA6a_rI"></script>
+    <script src="js/markerwithlabel.js" type="text/javascript"></script>
     <script src="js/map.js"></script>
     <link rel="stylesheet" href="css/style.css"> 
 </head>
-  <body>
+  <body  onload="initMapHeader()">
     <div class="wrapper portfolio-list__wrapper">
       <div class="header portfolio__header  portfolio-list__header">
         <div id="header-map" class="header-map"></div>
+        <input id="address" type="textbox" value="Хмельниьке шосе, 13">
+        
         <div class="menu-gamburger">
           <span></span>
         </div>
@@ -47,9 +50,9 @@
               </div>
               <div class="portfolio-list__markers">
                 <ul>
-                  <li><a class="portfolio-list__marker portfolio-list__marker-house" href="#"></a></li>
-                  <li><a class="portfolio-list__marker portfolio-list__marker-institute" href="#"></a></li>
-                  <li><a class="portfolio-list__marker portfolio-list__marker-tree" href="#"></a></li>
+                  <li><a class="portfolio-list__marker" href="#"><span>Проектирование</span><img src="img/marker-house.png" alt=""></a></li>
+                  <li><a class="portfolio-list__marker" href="#"><span>Проектирование</span><img src="img/marker-institute.png" alt=""></a></li>
+                  <li><a class="portfolio-list__marker" href="#"><span>Проектирование</span><img src="img/marker-tree.png" alt=""></a></li>
                 </ul>
               </div>
             </div>
