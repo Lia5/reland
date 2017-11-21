@@ -48,23 +48,21 @@ google.maps.event.addDomListener(window, "load", initMap);
 
 // initMapHeader() - функция инициализации карты
 
-
-
 function initMapHeader() {
   var centerLatLng = new google.maps.LatLng(55.771621, 37.672994);
   var mapOptions = {
       center: centerLatLng, 
-      zoom: 13,               // Зум по умолчанию. Возможные значения от 0 до 21
+      zoom: 14,               // Зум по умолчанию. Возможные значения от 0 до 21
       navigationControlOptions: {
         style: google.maps.NavigationControlStyle.SMALL
       },
        mapTypeId: google.maps.MapTypeId.ROADMAP
   };
+  
   try {
   var map = new google.maps.Map(document.getElementById("header-map"), mapOptions);
-
   map.scrollwheel=true;
-map.setOptions({ mapTypeControl:true});
+  map.setOptions({ mapTypeControl:true});
 
 var locations = [
 {
@@ -73,7 +71,8 @@ var locations = [
   icon: {
     url: "img/marker-tree.png",
     scaledSize: new google.maps.Size(42, 57)
-  }
+  },
+  content: "Название проекта1<br><span class='labels__smaller'>благоустройство и озеленение</span>"
 },
 {
   title: 'reland',
@@ -81,7 +80,8 @@ var locations = [
   icon: {
     url: "img/marker-tree.png",
     scaledSize: new google.maps.Size(42, 57)
-  }
+  },
+  content: "Название проекта2<br><span class='labels__smaller'>благоустройство и озеленение</span>"
 },
 {
   title: 'reland',
@@ -89,7 +89,8 @@ var locations = [
   icon: {
     url: "img/marker-house.png",
     scaledSize: new google.maps.Size(36, 36)
-  }
+  },
+  content: "Название проекта3<br><span class='labels__smaller'>благоустройство и озеленение</span>"
 }, 
 {
   title: 'reland',
@@ -97,21 +98,31 @@ var locations = [
   icon: {
     url: "img/marker-institute.png",
     scaledSize: new google.maps.Size(36, 36)
-  }
+  },
+  content: "Название проекта4<br><span class='labels__smaller'>благоустройство и озеленение</span>"
 }					
 ];
 locations.forEach( function( element ) {
-var marker = new google.maps.Marker({
+var marker = new MarkerWithLabel({
     position: element.position,
     map: map,
     title: element.title,
     icon: element.icon,
+    labelContent: element.content,
+    labelAnchor: new google.maps.Point(190, 70),
+    labelClass: "labels", // the CSS class for the label
+    labelStyle: {opacity: 0.75},
   });
 });	
   } catch (e) {}
+
+  
 }
+
 // Ждем полной загрузки страницы, после этого запускаем initMap()
 google.maps.event.addDomListener(window, "load", initMapHeader);
+
+
 
 
 function initMapContact() {

@@ -13,6 +13,25 @@ body {
   line-height: 1.3;
   font-family: 'PTSans', sans-serif;
 }
+.labels {
+  color:  #1d7e21;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  background-color: white;
+  font-family: 'PTSans', sans-serif;
+/*  width: 40px;     
+  border: 2px solid black;*/
+  white-space: nowrap;
+  padding: 7px;
+}
+.labels__smaller {
+  font-family: 'PTSans', sans-serif;
+  color:  #000000;
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -563,27 +582,39 @@ footer {
 .portfolio-list__markers a {
   text-decoration: none;
   cursor: pointer;
+  color: #000000;
 }
 .portfolio-list__marker {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.portfolio-list__marker img {
+  padding: 2px;
   width: 38px;
   height: 38px;
   display: block;
   border: 2px solid #114d14;
   border-radius: 50%;
+  background-color: #ffffff;
 }
-.portfolio-list__marker-house {
-  background: url('../img/marker-house.png') no-repeat center;
-  background-size: 68%;
-}
-.portfolio-list__marker-institute {
-  background: url('../img/marker-institute.png') no-repeat center;
-  background-size: 68%;
-}
-.portfolio-list__marker-tree {
-  background: url('../img/marker-tree.png') no-repeat center;
-  background-size: 68%;
+.portfolio-list__marker span {
+  padding: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: none;
+  background-color: #ffffff;
+
 }
 
+.portfolio-list__markers a:hover span {
+  display: block;
+
+}
+.portfolio-list__marker span:hover {
+color: #1d7e21;
+}
 .portfolio-list__header {
   background-image: url('../img/map-pic.jpg');
 }
@@ -1579,7 +1610,7 @@ footer {
   }
   .portfolio-list__markers {
     position: absolute;
-    right: 31px;
+    right: 18%;
     bottom: 407px;
   }
   .portfolio-list__text-green-bg {
