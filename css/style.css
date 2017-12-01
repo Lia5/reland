@@ -1203,6 +1203,7 @@ color: #1d7e21;
   .contacts__white-rectangle-for-logo {
     right: auto;
     left: 39px;
+    width: 50%;
   }
   .contacts__adress-smaller {
     width: auto;
@@ -1260,7 +1261,7 @@ color: #1d7e21;
     bottom: 28px;
   }
   .white-rectangle-for-logo {
-    width: 292px;
+    width: 29%;
     height: 175px;
     bottom: 0;
     right: 47px;
@@ -1421,6 +1422,7 @@ color: #1d7e21;
     bottom: 409px;
   }
   .portfolio__white-rectangle-for-logo {
+    width: 62%;
     bottom: -28px;
     z-index: 3;
   }
@@ -1707,6 +1709,12 @@ color: #1d7e21;
   .how-contact970 {
     right: 58px;
   }
+  .white-rectangle-for-logo {
+    width: 25%;
+  }
+  .portfolio__white-rectangle-for-logo {
+    width: 52%;
+  }
   .portfolio__project__header {
     right: 99px;
   }
@@ -1778,7 +1786,12 @@ color: #1d7e21;
     margin-left: 22%;
     width: 52%;
   }
-
+  .white-rectangle-for-logo {
+    width: 22%;
+  }
+  .portfolio__white-rectangle-for-logo {
+    width: 46%;
+  }
 
 }
 @media screen and (min-width: 1400px) {
@@ -1791,6 +1804,12 @@ color: #1d7e21;
   }
   .portfolio__project__foto__works {
     padding-top: 111px;
+  }
+  .white-rectangle-for-logo {
+    width: 21%;
+  }
+  .portfolio__white-rectangle-for-logo {
+    width: 43%;
   }
 }
 @media screen and (min-width: 1540px) {
@@ -1810,6 +1829,15 @@ color: #1d7e21;
   .white-rectangle-for-logo,
   .how-contact970 {
     right: 131px;
+  }
+  .white-rectangle-for-logo {
+    width: 19%;
+  }
+  .portfolio__white-rectangle-for-logo {
+    width: 44%;
+  }
+  .contacts__white-rectangle-for-logo {
+    width: 59%;
   }
   .portfolio__menu-full {
     right: 131px;
@@ -1857,6 +1885,7 @@ color: #1d7e21;
   /*contacts*/
   .contacts__items {
     margin-left: -290px;
+    position: relative;
   }
   .contacts__text-green-bg {
     margin-left: 171px;
@@ -1869,10 +1898,21 @@ color: #1d7e21;
     width: 90%;
   }
   .contacts__green-rectangle-for-logo {
-    right: 30px;
-    width: 90%;
+    right: auto;
+    width: 55%;
+    left: -19%;
   }
-
-
-
+  .contacts__white-rectangle-for-logo {
+    right: auto;
+    left: 51%;
+  }
+  .contacts__menu-full {
+    right: auto;
+    bottom: 119%;
+    left: 23%;
+  }
+  .contacts__adress__h2 {
+    left: -220px;
+    bottom: 307px;
+  }
 }
