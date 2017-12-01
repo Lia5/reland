@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,34 @@
     <link rel="stylesheet" href="css/style.css"> 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrCJjsEd1-NqzpD_-ode97UjJkJA6a_rI"></script>
     <script src="js/map.js"></script>
+    <script src="js/modernizr.js"></script> 
+
 </head>
   <body>
     <div class="wrapper">
-      <div class="header">
-        <div class="menu-gamburger">
-          <span></span>
-        </div>
+      <div class="header parallax-window" data-parallax="scroll" data-image-src="img/bg-slider.jpg">
+        <header>
+          <nav class="cd-main-nav-wrapper">
+            <ul class="cd-main-nav">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Как сделать заказ</a></li>
+              <li class="current-menu-item"><a>Отзывы</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul> <!-- .cd-main-nav -->
+          </nav> <!-- .cd-main-nav-wrapper -->
+          <!-- <a href="#0" class="cd-nav-trigger">Menu<span></span></a>-->
+        <!--  <a class="menu-gamburger cd-nav-trigger">
+            <span></span>
+          </a>-->
+          <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+        </header>
+        <main class="cd-main-content">
+          <!-- main content here -->
+        </main>
+
+
         <div class="menu-full">
           <h3 class="title-green">Отзывы</h3>
           <ul>
@@ -194,5 +215,8 @@
    
       </footer>
     </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/main.js"></script> 
   </body>
 </html>
