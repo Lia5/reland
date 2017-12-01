@@ -147,7 +147,7 @@ var locations = [
   position: {lat: 55.775500, lng: 37.635157}, 
   icon: {
     url: "img/map-tree.png",
-    scaledSize: new google.maps.Size(42, 57)
+    scaledSize: new google.maps.Size(66, 54)
   }
 }
 ];
