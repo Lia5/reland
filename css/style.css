@@ -36,12 +36,27 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  overflow-x: hidden;/*РАСКОМЕНТИРОВАТЬ В КОНЦЕ*/
+  overflow-x: hidden;
+}
+.wrapper1520 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+.portfolio__wrapper1520 {
+  display: block;
+}
+.portfolio-list__wrapper1520 {
+  flex-direction: row;
 }
 .header {
   position: relative;
  /* background: url('../img/bg-slider.jpg') no-repeat center;
   background-size: cover;*/
+  min-height: 93vh;
+}
+.header .wrapper1520 {
   min-height: 93vh;
 }
 .menu-full {
@@ -964,6 +979,7 @@ color: #1d7e21;
 }
 .portfolio-list__description {
   padding: 37px 71px 26px 30px;
+  z-index: 3;
 }
 .portfolio-list__description__title {
   font-size: 41px;
@@ -1752,8 +1768,9 @@ color: #1d7e21;
   }
   .portfolio__project__header {
     right: 88px;
-    
     padding: 0;
+    padding-top: 110px;
+    
   }
   .portfolio__project__date-social {
     width: 39%;
@@ -1863,11 +1880,16 @@ color: #1d7e21;
   .footer-under-tree {
     left: auto;
     right: 109px;
+    bottom: 285px;
+  }
+  .text__footer-under-tree {
+    bottom: -177px;
+    z-index: 2;
   }
   .footer-behind-bg-tree {
     display: block;
     position: absolute;
-    bottom: -109px;
+    bottom: 310px;
     left: 0;
     z-index: -1;
   }
@@ -1906,6 +1928,9 @@ color: #1d7e21;
     bottom: 135px;
     top: auto;
   }
+  .text__footer-behind-bg-tree {
+    bottom: 0;
+  }
   .portfolio__green-rectangle-for-logo .text__portfolio-date {
     display: block;
   }
@@ -1915,6 +1940,7 @@ color: #1d7e21;
     color: #000000;
     text-transform: uppercase;
   }
+  
   .portfolio-list__social-links {
     padding-left: 10px;
     
@@ -2048,6 +2074,9 @@ color: #1d7e21;
   .text_project__right-menu {
     right: -30px;
   }
+  .text__portfolio__project__right-menu-tel {
+    right: 38px;
+  }
   /*portfolio-list*/
   .portfolio-list__text-green-bg {
     width: 73%;
@@ -2127,6 +2156,21 @@ color: #1d7e21;
   }
 }
 @media screen and (min-width: 1540px) {
+  .wrapper1520 {
+    max-width: 1520px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .wrapper1520 .how-contact970 {
+    top: 0;
+  }
+  header.nav-is-visible {
+    -webkit-transform: translateX(0); 
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
   .portfolio__header {
     background-size: cover;
   }
@@ -2134,10 +2178,11 @@ color: #1d7e21;
     left: 44px;
   }
   .review-first {
-    margin-top: -29%;
+    margin-top: -550px;
   }
   .review {
     margin-left: 240px;
+    max-width: 630px;
   }
   .menu-full,
   .white-rectangle-for-logo,
@@ -2147,15 +2192,38 @@ color: #1d7e21;
   .white-rectangle-for-logo {
     width: 19%;
   }
-  .portfolio__white-rectangle-for-logo {
-    width: 44%;
+  .portfolio__little-green-rectangle {
+    left: -114px;
   }
-  .contacts__white-rectangle-for-logo {
-    width: 59%;
+  .portfolio__green-rectangle-for-logo {
+    width: 38%;
+    right: 132px;
+  }
+  .portfolio__white-rectangle-for-logo {
+    width: 323px;
+    right: 0;
+  }
+  .portfolio-list__green-rectangle-for-logo {
+    width: 45%;
+    right: -385px;
   }
   .portfolio__menu-full {
     right: 131px;
+    width: 257px;
+    bottom: 250px;
+  } 
+  .portfolio-list__menu-full {
+    right: 113px;
+    width: 257px;
+    bottom: auto;
+    top: -442px;
   }
+
+  
+  .contacts__white-rectangle-for-logo {
+    width: 59%;
+  }
+  
   .portfolio__project__foto__main {
     margin-left: 261px;
     width: 807px;
@@ -2172,10 +2240,13 @@ color: #1d7e21;
   .portfolio__project__foto__works {
     width: 42%;
   }
+  .portfolio__project-title {
+    width: 235px;
+    left: 41px;
+  }
   .portfolio__project__stage__foto-main {
     margin-top: 15px;
     width: 679px; 
-    height: 498px; 
   }
   .portfolio__project__stages {
     padding-left: 115px;
@@ -2186,6 +2257,10 @@ color: #1d7e21;
   .text-green-bg {
     margin-right: 131px;
   }
+  .text__menu-full {
+    bottom: 150px;
+  }
+  
   .portfolio-list__text-green-bg {
     width: 73%;
     margin-left: 173px;
@@ -2196,6 +2271,7 @@ color: #1d7e21;
   .portfolio-list__text-green-bg {
     width: 63%;
   }
+ 
   /*contacts*/
   .contacts__items {
     margin-left: -290px;
