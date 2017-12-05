@@ -59,6 +59,12 @@ body {
 .header .wrapper1520 {
   min-height: 93vh;
 }
+.header .contact__wrapper1520 {
+  min-height: auto;
+}
+.contact__wrapper1520 {
+  flex-direction: row;
+}
 .menu-full {
   display: none;
 }
@@ -2300,6 +2306,7 @@ color: #1d7e21;
     right: auto;
     bottom: 119%;
     left: 23%;
+    top: -300px;
   }
   .contacts__adress__h2 {
     left: -220px;
