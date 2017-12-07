@@ -1,0 +1,297 @@
+// @media screen and (max-width:1560px){
+
+// }
+// @media screen and (min-width: 1190px){
+//   .header-content {
+//     width: 83%;
+//   }
+
+//   .chemical-title {
+//     top: 66%;
+//     left: 8%;
+//   }
+
+//   .consulting {
+//     width: 100%;
+//   }
+
+//   .main-footer{
+//     margin: 205px 15px 0 0;
+//     justify-content: flex-start;
+//   }
+// }
+@media screen and (min-width: 975px) and (max-width:1189px){
+
+  .header-content {
+    width: 84%;
+    min-height: 440px;
+  }
+
+  .main-nav {
+    padding: 40px 30px 50px;
+  }
+
+  .logo-container {
+    width: 700px;
+  }
+
+
+  .gardening-content {
+    width: 445px;
+    margin-top: 90px;
+  }
+
+  .image-container {
+    width: 411px;
+  }
+
+  .gardening__image {
+    width: 700px;
+  }
+
+  .gardening-layout{
+    width: 890px;
+  }
+
+  .gardening-content{
+    margin-right: 30px;
+  }
+
+  .gardening-title {
+    right: -440px;
+  }
+
+  .example-container {
+    top: 150px;
+  }
+
+  .example__description {
+    max-height: 90px;
+    overflow: hidden;
+  }
+
+  .image-container__item {
+    width: 195px;
+  }
+
+  .tree-container {
+    left: 310px;
+    bottom: 160px;
+  }
+
+  .landscape__bg {
+    background-position: center;
+  }
+
+  .trim {
+    margin-top: 200px;
+  }
+  .trim-image__container {
+    width: 485px;
+    bottom: 30px;
+  }
+
+  .trim-header {
+    height: 330px;
+  }
+  .trim__title {
+    right: 95px;
+    margin-top: 70px;
+  }
+
+  .trim-description__text {
+    margin: 0 20px 0 15px;
+  }
+
+  .get-order {
+    margin-left: 20px;
+  }
+
+  .chemical {
+    margin-top: 40px;
+  }
+
+  .chemical-title {
+    top: 63%;
+    left: 5%;
+  }
+
+  .chemical__bg {
+    background-position: center;
+    background-size: 130%;
+    height: 585px;
+  }
+
+  .chemical__green-line{
+    bottom: 50px;
+  }
+
+  .consulting {
+    width: 955px;
+  }
+  .consulting-container {
+    min-width: 700px;
+  }
+
+  .consulting-image-container{
+    width: 610px;
+  }
+
+  .main-footer {
+    width: 955px;
+  }
+
+  .map-container {
+    width: 810px;
+    background-position: center;
+  }
+
+  .footer-nav__container{
+    right: 15px;
+  }
+}
+@media screen and (min-width:750px) and (max-width: 974px){
+  
+  .main-header {
+    padding-top: 20px;
+  }
+
+  .header-content {
+    min-height: 380px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .logo-container {
+    position: absolute;
+    width: 690px;
+    right: 0;
+  }
+
+  .sb750 {
+    position: absolute;
+    top: -30px;
+  }
+
+  .social-buttons {
+    margin-left: 53px;
+  }
+
+  .gardening-title{
+    right: 0;
+  }
+  .gardening-content {
+    width: 100%;
+    margin-top: 120px;
+    padding: 0 15px;
+  }
+
+  .gardening__image {
+    width: 700px;
+  }
+  
+  .gardening-layout {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .example-container {
+    padding: 0 15px;
+  }
+
+  .image-container{
+    width: auto;
+  }
+
+  .image-container__item {
+    width: 325px;
+  }
+
+  .tree-container {
+    left: 20%;
+  }
+
+  .landscape__bg {
+    background-position: center;
+  }
+
+  .landscape__description > div:nth-of-type(2) {
+    display: none;
+  }
+
+  .description__column {
+    max-width: 410px;
+  }
+
+  .trim {
+    margin-top: 130px; 
+  }
+
+  .trim__title{
+    width: auto;
+    margin-top: 30px;
+    right: 0;
+    position: absolute;
+    font-size: 44px;
+  }
+
+  .trim__title:before{
+    top: -7px;
+    left: 0;
+    width: 350px;
+    height: 75px;
+  }
+
+  .trim-description__text {
+    max-width: 500px;
+    margin: 0 10px 0 0;
+  }
+
+  .trim-options__list{
+    width: 265px;
+    margin-top: 125px;
+  }
+  
+  .trim-header {
+    height: 320px;
+    justify-content: flex-end;
+  }
+
+  .trim-image__container {
+    position: absolute;
+    width: 390px;
+    left: 0;
+    top: -10px;
+  }
+
+  .consulting {
+    width: 100%;
+  }
+
+  .consulting-container {
+    min-width: 625px;
+    height: 310px;
+  }
+
+  .consulting-image-container{
+    width: 510px;
+    top: 120px;
+  }
+
+  .main-footer {
+    width: 735px;
+  }
+}
+@media screen and (max-width:480px){
+
+}
