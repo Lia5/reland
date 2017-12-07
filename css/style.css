@@ -1115,7 +1115,7 @@ body {
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 974px) {
+@media screen and (max-width: 974px) {
   .main-header {
     padding-top: 20px;
   }
@@ -1237,14 +1237,54 @@ body {
   }
 }
 
-@media screen and (min-width: 420px) and (max-width: 749px) {
+@media screen and (max-width: 749px) {
   .main-nav {
     display: none;
   }
   .header-content {
-    height: auto;
+    min-height: 380px;
   }
+  .contacts__main__index {
+    float: left;
+  }
+  .logo-container {
+    width: 90%;
+
+  }
+.gardening__image {
+    width: 100%;
 }
+.image-container__item {
+  width: 45%;
+}
+.main-footer {
+  width: 100%;
+}
+.description__column, 
+.trim-description__text {
+  padding-left: 5px;
+}
+.tree-container {
+  width: 300px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
