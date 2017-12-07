@@ -1237,7 +1237,14 @@ body {
   }
 }
 
-
+@media screen and (min-width: 420px) and (max-width: 749px) {
+  .main-nav {
+    display: none;
+  }
+  .header-content {
+    height: auto;
+  }
+}
 
 
 
@@ -2349,10 +2356,14 @@ color: #1d7e21;
 }
 .contacts__text-green-bg {
   position: relative;
-  width: 168px;
+  width: 120px;
 }
+.contacts__adress {
+  width:140px;
+}
+
 .contacts__social-links {
-  width: 100%;
+  width: 70%;
   padding: 15px 10px;
   padding-bottom: 361px;
   background: none;
@@ -2505,9 +2516,15 @@ color: #1d7e21;
   .contacts__items {
     margin-left: -123px;
   }
-
-
-
+  .contacts__text-green-bg {
+    width: 168px;
+  }
+  .contacts__social-links {
+    width: 100%;
+  }
+  .contacts__adress  {
+    width: auto;
+  }
 
 }
 
