@@ -1115,7 +1115,7 @@ body {
   }
 }
 
-@media screen and (max-width: 974px) {
+@media screen and (min-width: 750px) and (max-width: 974px) {
   .main-header {
     padding-top: 20px;
   }
@@ -1238,7 +1238,7 @@ body {
 }
 
 @media screen and (max-width: 749px) {
-.header-carousel {
+/*.header-carousel {
   width: 100vw;
 }
 
@@ -1308,7 +1308,8 @@ width: 280px;
 }	
 .social-buttons {
     margin-left: 13px;
-}
+}*/
+	
 }
 
 
