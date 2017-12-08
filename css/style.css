@@ -1267,7 +1267,26 @@ body {
 .tree-container {
   width: 300px;
 }
-
+.get-order {
+  display:  none;
+}
+.chemical__bg {
+  height: 400px;
+}
+.chemical-title {
+  font-size: 38px;
+}
+.brand-logo {
+  width: 224px;
+}.trim__title:before {
+  width: 245px;
+}
+.trim__title {
+  font-size: 32px;
+}
+.footer-menu__container {
+  display: none;
+}
 
 }
 
