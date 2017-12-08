@@ -1238,7 +1238,9 @@ body {
 }
 
 @media screen and (max-width: 749px) {
-	
+.header-carousel {
+  width: 100vw;
+}
 
   .main-nav {
     display: none;
