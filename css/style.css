@@ -1252,20 +1252,20 @@ body {
 
   }
 .gardening__image {
-    width: 100%;
+    width: 100vw;
 }
 .image-container__item {
   width: 45%;
 }
 .main-footer {
-  width: 100%;
+  width: 100vw;
 }
 .description__column, 
 .trim-description__text {
   padding-left: 5px;
 }
 .tree-container {
-  width: 300px;
+  width: 260px;
 }
 .get-order {
   display:  none;
