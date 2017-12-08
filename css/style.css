@@ -1242,14 +1242,14 @@ body {
     display: none;
   }
   .header-content {
-    min-height: 380px;
+    min-height: 200px;
   }
   .contacts__main__index {
     float: left;
   }
   .logo-container {
-    width: 100vw;
-
+    width: 280px;
+    position: relative;
   }
 .gardening__image {
     width: 100vw;
@@ -1299,7 +1299,12 @@ width: 280px;
 .feature {
   font-size: 35px;
 }	
-	
+.contacts__main__index {
+  font-size: 13px;
+}	
+.social-buttons {
+    margin-left: 13px;
+}
 }
 
 
