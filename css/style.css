@@ -1248,7 +1248,7 @@ body {
     float: left;
   }
   .logo-container {
-    width: 90%;
+    width: 100vw;
 
   }
 .gardening__image {
@@ -1288,6 +1288,9 @@ body {
   display: none;
 }
 
+	
+	
+	
 }
 
 
