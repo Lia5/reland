@@ -336,7 +336,9 @@ body {
   font-style: italic;
   color: #135517;
 }
-
+.social--gardening320  {
+  display: none;
+}
 .social--gardening {
   position: relative;
   margin: 0;
@@ -428,7 +430,9 @@ body {
   margin: 15px 0;
   color: #1d7e22;
 }
-
+.tree-container320 {
+  display: none;
+}
 .tree-container {
   position: absolute;
   bottom: 230px;
@@ -1307,19 +1311,21 @@ body {
   .gardening-title:before {
     width: 0%;
     left: 0px;
-}
-.gardening-title:after {
-  width: 0%;
-  top: 90px;
-  left: 13px;
-}
-.bg-white {
-  padding: 5px;
-  background-color: #ffffff;
-}
+  }
+  .gardening-title:after {
+    width: 0%;
+    top: 90px;
+    left: 13px;
+  }
+  .bg-white {
+    padding: 5px;
+    background-color: #ffffff;
+  }
   .gardening-content {
     margin-right: 0;
     width: 100%;
+    padding: 0 15px;
+    min-height: 530px;
   }
   .gardening__image {
     width: 100%;
@@ -1339,13 +1345,33 @@ body {
     display: none;
   }
   .tree-container320 {
-    width: 86%;
+    display: block;
+    width: 300px;
     position: absolute;
     bottom: -115px;
     left: -43px;
+    margin-right: 20px;
   }
   .tree-container320 img {
     width: 100%;
+  }
+  .gardening__read-more {
+    display: none;
+  }
+  .social--gardening {
+    display: none;
+  }
+  .social--gardening320 {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .gardening__read-more320 {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 61px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   .example-container {
     top: 0;
@@ -1366,9 +1392,6 @@ body {
     width: 100%;
     flex-wrap: wrap;
     position: relative;
-  }
-  .gardening-content {
-    padding: 0 15px;
   }
   .tree-container {
     left: 49px;
@@ -1490,77 +1513,7 @@ body {
     background-size: cover;
 
   }
-/*.header-carousel {
-  width: 100vw;
-}
 
-  .main-nav {
-    display: none;
-  }
-  .header-content {
-    min-height: 200px;
-  }
-  .contacts__main__index {
-    float: left;
-  }
-  .logo-container {
-    width: 280px;
-    position: relative;
-  }
-.gardening__image {
-    width: 100vw;
-}
-.image-container__item {
-  width: 45%;
-}
-.main-footer {
-  width: 100vw;
-}
-.description__column, 
-.trim-description__text {
-  padding-left: 5px;
-}
-.tree-container {
-  width: 260px;
-}
-.get-order {
-  display:  none;
-}
-.chemical__bg {
-  height: 400px;
-}
-.chemical-title {
-  font-size: 38px;
-}
-.brand-logo {
-  width: 224px;
-}.trim__title:before {
-  width: 245px;
-}
-.trim__title {
-  font-size: 32px;
-}
-.footer-menu__container {
-  display: none;
-}
-.trim-image__container {
-  width: 240px;
-}
-.trim-options__list {
-    font-size: 18px;
-}
-.features-block {
-width: 280px;	
-}
-.feature {
-  font-size: 35px;
-}	
-.contacts__main__index {
-  font-size: 13px;
-}	
-.social-buttons {
-    margin-left: 13px;
-}*/
 	
 }
 
