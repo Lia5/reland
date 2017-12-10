@@ -1238,6 +1238,258 @@ body {
 }
 
 @media screen and (max-width: 749px) {
+  .feature {
+    font-size: 37px;
+  }
+  .header-bottom {
+    flex-wrap: wrap;
+  }
+  .header-content {
+    min-height: auto;
+  }
+  .header-content .main-nav {
+    display: none;
+  }
+  .logo-container {
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .brand-logo {
+    width: 48%;
+    height: auto;
+    background-size: 100%;
+    position: static;
+    margin-left: 10px;
+  }
+  .brang-logo--background {
+    display: none;
+      left: 173px;
+      width: 231px;
+      height: 121px;
+  }
+  .contacts-container {
+    position: static;
+    margin-top: 28px;
+    order: -1;
+    width: 47%;
+  }
+  .contacts__main__index {
+    float: left;
+    font-size: 15px;
+    padding-left: 5px;
+    margin-right: 0;
+  }
+  .contacts__main__index-hiden {
+    display: none;
+  }
+  .gardening-container {
+    margin-top: 108px;
+    margin-right: 0;
+  }
+  .gardening-title {
+    right: auto;
+    width: 100%;
+    font-size: 30px;
+
+  }
+  .title--green {
+    font-size: 31px;
+  }
+
+  .title--green:before {
+    left: 11px;
+    top: 0px;
+    width: 0%;
+  }
+  .gardening-title:before {
+    width: 0%;
+    left: 0px;
+}
+.gardening-title:after {
+  width: 0%;
+  top: 90px;
+  left: 13px;
+}
+.bg-white {
+  padding: 5px;
+  background-color: #ffffff;
+}
+  .gardening-content {
+    margin-right: 0;
+    width: 100%;
+  }
+  .gardening__image {
+    width: 100%;
+    min-height: auto;
+    height: 300px;
+  }
+  .image-container {
+    width: 100%;
+    padding-bottom: 84px;
+    justify-content: center;
+  }
+  .tree-right {
+    right: auto;
+    left: 5%;
+  }
+  .tree-container {
+    display: none;
+  }
+  .tree-container320 {
+    width: 86%;
+    position: absolute;
+    bottom: -115px;
+    left: -43px;
+  }
+  .tree-container320 img {
+    width: 100%;
+  }
+  .example-container {
+    top: 0;
+    background-color: #b0cb1f;
+
+  }
+  .example__description {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .get-order__link {
+    font-size: 19px;
+  }
+
+
+
+  .gardening-layout {
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .gardening-content {
+    padding: 0 15px;
+  }
+  .tree-container {
+    left: 49px;
+  }
+  .description__column {
+    max-height: auto;
+  }
+  .landscape__description {
+    flex-wrap: wrap;
+  }
+  .lansdscape__title {
+    left: 0;
+    padding-left: 20px;
+    width: 80%;
+    font-size: 35px;
+  }
+  .lansdscape__title:before,
+  .lansdscape__title:after {
+    width: 0%;
+  }
+  .landscape-project {
+    margin-top: 125px;
+  }
+
+  .trim {
+    margin-top: 100px;
+  }
+  .trim-header {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .trim__title {
+    right: auto;
+    font-size: 50px;
+    width: auto;
+    margin-top: 0px;
+    font-size: 32px;
+    padding-left: 5px;
+  }
+  .trim__title:before {
+    width: 0%;
+    right: auto;
+  }
+  .trim-image__container {
+    width: 100%;
+    bottom: 78px;
+  }
+  .trim-description__text {
+    max-width: 300px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .trim-options__list {
+    margin: 16px 33px;
+  }
+  .chemical {
+    margin-top: 0;
+  }
+  .chemical-title {
+    left: auto;
+    width: 95%;
+    font-size: 29px;
+    padding: 0 2%;
+  }
+  .chemical-title:after {
+    width: 0;
+
+  }
+  .chemical__bg {
+    height: 425px;
+    background-position-x: right;
+  }
+  .consulting {
+    width: 100%;
+    margin-top: 0;
+  }
+  .consulting-container {
+    flex-wrap: wrap;
+    min-width: auto; 
+    height: auto; 
+    margin-right: 0;
+  }
+  .consulting-image-container {
+    position: static;
+    padding-top: 216px;
+    width: 100%;
+    right: auto;
+  }
+
+  .consulting__title {
+    position: absolute;
+    top: 0;
+    width: auto;
+    font-size: 28px;
+    line-height: 46px;
+  }
+  .consulting__title:before, 
+  .consulting__title:after {
+    width: 0%;
+  }
+.main-footer {
+    width: 100%;
+    margin: 0;
+  }
+  .footer-menu__container {
+    display: none;
+  }
+  .footer-nav__container:after {
+    width: 100%;
+  }
+  .footer-logo__container {
+    width: 290px;
+    height: 175px;
+  }
+  .feedback-btn {
+    left: 20px;
+    width: 140px;
+    height: 137px;
+    background-size: cover;
+
+  }
 /*.header-carousel {
   width: 100vw;
 }
