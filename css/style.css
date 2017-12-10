@@ -2061,7 +2061,7 @@ Main Components
   font-weight: 700;
 }
 .how-contact__social-group {
-  width: 45%;
+  width: 47%;
   background: url('../img/bush.png') no-repeat;
   background-size: 87%;
   background-position: left bottom;
@@ -2156,7 +2156,7 @@ footer {
   height: 373px;
 }
 .footer__logo {
-  width: 61%; /*289*/
+  width: 91%; 
   height: 174px;
   position: absolute;
   right: 0;
@@ -2164,6 +2164,7 @@ footer {
   z-index: 2;
   text-align: right;
 }
+
 .footer__buterfly {
   height: 242px;
   position: absolute;
@@ -2324,8 +2325,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+
 .portfolio__project__foto__work {
-  width: 43%;
+  width: 89%;
   margin: 15px;
 }
 .portfolio__project__text__main {
@@ -2644,6 +2646,7 @@ color: #1d7e21;
 }
 .contacts__green-rectangle-for-logo {
   margin-top: -78px;
+  width: 100%;
 }
 .contacts__text-green-bg {
   position: relative;
@@ -2817,6 +2820,7 @@ color: #1d7e21;
     width: auto;
   }
 
+
 }
 
 
@@ -2937,6 +2941,9 @@ color: #1d7e21;
   .footer__hidden-text {
     display: inline;
   }
+  .footer__logo {
+    width: 61%;/*289*/
+  }
 /*portfolio*/
 .header {
   min-height: 100vh;
@@ -2994,12 +3001,14 @@ color: #1d7e21;
   .portfolio__project__foto__main {
     width: 60%;
   }
+  
   .portfolio__project__foto__works {
     overflow: hidden;
   }
   .portfolio__project__foto__work {
     width: 29%;
   }
+
   .portfolio__project__text {
     width: 30%;
   }
