@@ -202,6 +202,8 @@ body {
           justify-content: space-between;
   height: 130px;
   margin-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .social-buttons {
@@ -459,7 +461,10 @@ body {
   -webkit-filter: blur(1px);
           filter: blur(1px);
 }
-
+.portfolio__other-projects--index  {
+  max-width: 1130px;
+  margin: 0 auto;
+}
 .landscape-project {
   display: -webkit-box;
   display: -webkit-flex;
@@ -470,7 +475,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 270px;
+  margin-top: 0;
 }
 
 .landscape__header {
@@ -1413,7 +1418,7 @@ body {
     width: 0%;
   }
   .landscape-project {
-    margin-top: 125px;
+    margin-top: 0;
   }
 
   .trim {
